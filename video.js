@@ -15,7 +15,7 @@ const {chromium } = require('playwright');
   await page.click('button');
   await page.waitForSelector('#loading');
   await page.waitForSelector('#loading', {state: 'hidden'});
-  await page.waitForTimeout(100)
+  await page.waitForTimeout(100);
 
   await browser.close();
 })();
